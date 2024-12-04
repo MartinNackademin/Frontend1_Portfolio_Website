@@ -8,7 +8,6 @@ Welcome to my first website built using **React**! This project serves as both a
 - [Features](#features)
 - [Technologies & Tools](#technologies-tools)
 - [Future Improvements](#future-improvements)
-- [How to Run the Project](#how-to-run-the-project)
 
 ## Introduction
 
