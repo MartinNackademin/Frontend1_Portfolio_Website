@@ -42,7 +42,6 @@ This project is built with the following technologies:
 - **HTML/CSS**: Used to structure and style the website.
 - **JavaScript**: For interactivity and dynamic content.
 - **React Router**: For navigation between pages without full page reloads.
-- **Sass**: For better styling management with variables, nesting, and reusable styles.
 - **React Icons**: To add clean, minimalistic icons throughout the site.
 - **Responsive Design**: The website is fully responsive, thanks to media queries and modern CSS layout techniques (Flexbox, Grid).
 
@@ -55,3 +54,4 @@ Once the website is functional, there are several features and improvements I pl
 - **Accessibility Improvements**: Ensure full accessibility, including keyboard navigation and improved screen reader support.
 - **Backend Integration**: Add server-side functionality, such as a contact form with email notifications or a database of projects.
 - **SEO Optimization**: Improve search engine optimization for better discoverability on search engines, just for fun.
+- **Sass**: For better styling management with variables, nesting, and reusable styles.
