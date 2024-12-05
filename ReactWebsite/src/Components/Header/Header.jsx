@@ -6,7 +6,7 @@ function Header() {
  <header className="siteheader">
         <div className="logo">
             <i className='bx bxs-cat logoicon'></i>
-            Martin Mohns<span class="logopart2"> Website</span>                
+            Martin Mohns<span className="logopart2"> Website</span>                
         </div>
         <nav>
             <ul className="navmenu">
@@ -14,12 +14,12 @@ function Header() {
                 <HeaderMenuItem headerName="Projects & Skills"/>
                 <HeaderMenuItem headerName="Socials"/>  
                 <HeaderMenuItem headerName="CV"/>
-                <HeaderMenuItem headerName="Contact"/>
+                
             </ul>
         </nav>
         <ul className="navicons">
-           <li><a className="navanchor" href="#"><i class='bx bx-search-alt navicon'></i></a></li> 
-           <li><a className="navanchor" href="#"><i class='bx bx-menu navicon' ></i></a></li> 
+           <li><a className="navanchor" href="#"><i className='bx bx-search-alt navicon'></i></a></li> 
+           <li><a className="navanchor" href="#"><i className='bx bx-menu navicon' ></i></a></li> 
         </ul>
     </header>      
       </>
