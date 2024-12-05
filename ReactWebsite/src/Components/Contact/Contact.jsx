@@ -1,6 +1,7 @@
 import React from 'react';
 import {useFormik} from 'formik';
 import './contact.css';
+import contactIcon from '../../assets/contact_icon.png';
 
 function contactvalidate(values){
     const errors = {};
@@ -43,14 +44,18 @@ function Contact() {
     
     const [isVisible, setIsVisible] = React.useState(false);
 
-    function ShowContact() {
+    function ToggleContact() {
             setIsVisible(!isVisible);
             }
 
         return (
             <>
-            <button onClick={ShowContact}>Contact</button>
-               
+           
+            <img src={contactIcon} 
+                alt="A clickable Icon that brings up a Contact Form"
+                onClick={ToggleContact}
+                id='contactIcon'
+                 />
            { isVisible && (
            <section >
             <h1>Chat with me!</h1>

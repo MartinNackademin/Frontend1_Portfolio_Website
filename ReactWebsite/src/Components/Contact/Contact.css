@@ -103,3 +103,27 @@ button {
     outline: none; 
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
   }
+
+  #contactIcon{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    
+  }
+
+  img
+  {
+    padding: 1rem;
+    margin: 1rem;
+    width: 5%;
+    border: none; 
+  }
+
+  img:hover {
+    transform: scale(1.1);
+
+  }
