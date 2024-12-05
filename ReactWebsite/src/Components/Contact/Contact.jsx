@@ -1,7 +1,8 @@
 import React from 'react';
 import {useFormik} from 'formik';
 import './contact.css';
-import contactIcon from '../../assets/contact_icon.png';
+import contactIcon from './contact_icon.png';
+import close from './close_icon.png';
 
 function contactvalidate(values){
     const errors = {};
@@ -51,14 +52,21 @@ function Contact() {
         return (
             <>
            
-            <img src={contactIcon} 
-                alt="A clickable Icon that brings up a Contact Form"
+           { !isVisible &&  <img src={contactIcon} 
+                alt="A clickable Icon that brings up the Contact Form"
                 onClick={ToggleContact}
                 id='contactIcon'
-                 />
+                 />}
            { isVisible && (
            <section >
-            <h1>Chat with me!</h1>
+                <div id='ContactForm'>
+
+                
+                <img src={close} 
+                alt="A clickable Icon that closes the Contact Form"
+                onClick={ToggleContact}
+                id='contactClose'
+                 />
             <form onSubmit={formik.handleSubmit}>
                 <label htmlFor="name">Your Name</label>
                 <input
@@ -104,7 +112,7 @@ function Contact() {
                 <button type="submit">Submit</button>
             </form>
 
-            
+            </div>
         </section>)}
      
         </>

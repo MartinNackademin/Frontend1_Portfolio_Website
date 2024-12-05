@@ -1,14 +1,13 @@
 .error{
 
     color: red;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     transition: all 1s;
     display: flex;
-    justify-content: left;
 
 }
 
@@ -30,7 +29,7 @@ section{
     margin: 1rem;
     border-radius: 10px;
     background-color: #f0f0f0;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #ffffff;
     left: 0;
     right: 0;
     bottom: 0;
@@ -40,19 +39,8 @@ section{
     margin-left: auto;
     margin-right: auto;
     animation: contactmoveup 0.5s ease-in-out;
-    z-index: 10;
+    z-index: 2;
     width: 50%;
-}
-
-h1 {
-    font-size: 5.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    color: #000;
-    margin: 0.5rem;
-    display: flex;
-    justify-content: center;
 }
 
 @keyframes contactmoveup {
@@ -65,18 +53,6 @@ h1 {
         opacity: 1;
       }
   }
-
-  h1 {
-    font-size: 5.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    color: #000;
-    margin: 0.5rem;
-    display: flex;
-    justify-content: center;
-}
-
 button {
     background-color: #007bff; 
     color: #ffffff;  
@@ -112,18 +88,28 @@ button {
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    width: 5%;
     
   }
 
-  img
-  {
-    padding: 1rem;
-    margin: 1rem;
+#contactClose{
+    align-self: flex-end;
     width: 5%;
-    border: none; 
-  }
+    }
 
-  img:hover {
+#ContactForm{
+    display: flex;
+    flex-direction: column;
+    }
+
+  img:hover{
     transform: scale(1.1);
 
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
