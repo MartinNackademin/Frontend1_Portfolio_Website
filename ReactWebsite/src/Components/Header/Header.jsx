@@ -31,11 +31,11 @@ function Header() {
     </span>
         <nav>
             <ul className="navmenu">
-                <HeaderMenuItem className="headermenuitem"  headerName="Home" />
-                <HeaderMenuItem className="headermenuitem"  headerName="Projects"/>
-                <HeaderMenuItem className="headermenuitem"  headerName="Socials"/>  
-                <HeaderMenuItem className="headermenuitem"  headerName="Skills"/>
-                <HeaderMenuItem className="headermenuitem"  headerName="CV"/>
+                <HeaderMenuItem className="headermenuitem"  headerName="Home" ToggleNavbar={ToggleNavbar} />
+                <HeaderMenuItem className="headermenuitem"  headerName="Projects" ToggleNavbar={ToggleNavbar}/>
+                <HeaderMenuItem className="headermenuitem"  headerName="Socials" ToggleNavbar={ToggleNavbar}/>  
+                <HeaderMenuItem className="headermenuitem"  headerName="Skills" ToggleNavbar={ToggleNavbar}/>
+                <HeaderMenuItem className="headermenuitem"  headerName="CV" ToggleNavbar={ToggleNavbar}/>
             </ul>
         </nav>
     </header> }
