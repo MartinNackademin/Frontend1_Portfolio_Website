@@ -5,17 +5,17 @@ import { ProjectsListItem } from "./ProjectsListItem"
 let projects = [
     {
         name: "Portfolio Website",
-        desc: "This is my portfolio website showcasing my projects and skills.",
-        image:"https://mtek3d.com/wp-content/uploads/2018/01/image-placeholder-500x500.jpg",
+        desc: "showcasing my projects and skills.",
+        image:"https://thumbs.dreamstime.com/z/to-be-announced-blue-stamp-isolated-white-background-98291768.jpg?ct=jpeg",
     },
     {
-        name: "Webbpage for generating images with",
+        name: "Ai Web image generator",
         desc: "Currently working on this project.",
         image:"https://thumbs.dreamstime.com/z/to-be-announced-blue-stamp-isolated-white-background-98291768.jpg?ct=jpeg",
     },
     {
-        name: "Project 3",
-        desc: "Currently working on this project.",
+        name: "Project.exe is missing",
+        desc: "Hopefully I will have more projects to showcase soon.",
         image:"https://thumbs.dreamstime.com/z/to-be-announced-blue-stamp-isolated-white-background-98291768.jpg?ct=jpeg",
     }
 

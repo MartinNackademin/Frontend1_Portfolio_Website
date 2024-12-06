@@ -5,14 +5,22 @@ import { ProjectsList } from "./ProjectsList"
 export const Projects = () => {
     return (
         <main>
-            <section>Intro section</section>
             <section>
-                The project list section
+            <h1>My Projects</h1>
+
+
+
+            </section>
+            
+            <section>
+              
                 <div>
                 <ProjectsList/>
                 </div>
-                The project list section
+                
+            
             </section>
+
         </main>
     )
 }

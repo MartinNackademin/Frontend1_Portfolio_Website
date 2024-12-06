@@ -72,7 +72,8 @@ function Contact() {
                 <input
                  type="text" 
                  id="name" 
-                 name="name" 
+                 name="name"
+                 autoComplete="on" 
                  placeholder="Your Name"
                  onChange={formik.handleChange}
                  value={formik.values.name}
@@ -84,7 +85,8 @@ function Contact() {
                 <label className='contactlabel' htmlFor="email">Your Email</label>
                 <input
                  type="email" 
-                 id="email" 
+                 id="email"
+                 autoComplete="on"  
                  name="email" 
                  placeholder="Your Email"
                  onChange={formik.handleChange}
