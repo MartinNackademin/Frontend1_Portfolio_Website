@@ -4,12 +4,14 @@ import Footer from './Components/Footer/Footer'
 import Main from './Components/Main/Main'
 import React, { useState } from "react";
 import {PageContext} from './Components/data/PageContext'
+import { Contact } from './Components/Contact/Contact';
 
 
 
 function App() 
 {
   const [activePage, setActivePage] = useState("Home");
+  const {showContact, setShowContact} = useState(false);
   
 
   return (
@@ -19,6 +21,8 @@ function App()
       <Main/>
     </PageContext.Provider>
     <Footer/>
+    <Contact/>
+
     </>
     )
 }

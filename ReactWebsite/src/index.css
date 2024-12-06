@@ -24,6 +24,9 @@
 body {
     background-color: var(--background-color);
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .siteheader {
