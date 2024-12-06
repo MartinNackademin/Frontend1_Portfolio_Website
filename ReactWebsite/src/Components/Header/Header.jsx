@@ -2,6 +2,7 @@ import React from 'react';
 import { HeaderMenuItem } from "./HeaderMenuItem"
 import contactIcon from './menu-bar.png';
 import closeIcon from './close_icon.png';
+import mmIcon from './mm.png';
 import './Header.css';
 import '../.././index.css';
 
@@ -25,12 +26,18 @@ function Header() {
                  />}</div>
         </div>
   { isVisible && <header id='HeaderMenu'>
-    <span id='exitbutton'  ><img id='exitbuttonimage'  src={closeIcon} 
-                alt="A clickable Icon that exits the navbar"
-                onClick={ToggleNavbar}></img>
-    </span>
+ 
         <nav>
+          <span id='exitbutton'  >
+
+          <img id='exitbuttonimage'  
+              src={closeIcon} 
+              alt="A clickable Icon that exits the navbar"
+              onClick={ToggleNavbar}></img>
+          </span>
+          
             <ul className="navmenu">
+            <img src={mmIcon} id="mmicon" alt="Website Creator Logo" /> 
                 <HeaderMenuItem className="headermenuitem"  headerName="Home" ToggleNavbar={ToggleNavbar} />
                 <HeaderMenuItem className="headermenuitem"  headerName="Projects" ToggleNavbar={ToggleNavbar}/>
                 <HeaderMenuItem className="headermenuitem"  headerName="Socials" ToggleNavbar={ToggleNavbar}/>  

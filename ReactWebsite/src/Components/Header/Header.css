@@ -12,8 +12,6 @@
 #headerTopBar{
     background-color:var(--secondary-color);
     padding: 3%;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #HeaderMenu{
@@ -40,17 +38,25 @@
     display: flex;
     height: 100%;
     width: 15%;
- 
+    margin-left: auto;
 }
 
 #exitbutton{
-    display: flex;
-    width: auto;
-    height: 10%;
-    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    justify-content: center;
     padding: 2%;
     margin: 2%;
-    
+    margin-right: auto;
+}
+
+#mmicon{
+    display:flex;
+    width:auto;
+    height: 15%;
+   justify-content: center;
+   align-items: center;
 }
 
 
@@ -66,16 +72,20 @@
   }
 
   nav {
+    display: flex;
     padding: 2%;
     flex: 1;
-    position: relative;
+    justify-content: center;
+    
+  }
 
-
+  header{
+    display: flex;
+    
   }
 
   .navmenu{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-basis: 15%;
@@ -84,24 +94,24 @@
     font-size: 250%;
     height: 100%;
     gap: 5%;
-    
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 0.2em;
   }
 
 .navmenu a:active{
     color: var(--primary-color);
-    
   }
 
 .navmenu a:hover{
         color: var(--cta-color);
+    
     }
 
 .navmenu a{
-        color: var(--header-text-color);
         text-decoration: none;
         color:inherit;
-        align-items: center;
         font-weight: 700;
-        border: 1px solid 
     }
 
