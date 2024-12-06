@@ -9,9 +9,36 @@
     margin: 3%;
     padding: 2%;
 }
+.projectsListItem:hover{
+    scale: 1.1;
+}
+
 
 
 .projectsListItem img{
+    display: flex;
     width: 25%;
 
 }
+
+.projectsListItem p{
+    font-size: 1.1rem;
+
+}
+
+.projectsListItem h3{
+    text-decoration: underline;
+    border-bottom: 1em;
+
+
+}
+
+
+#projectintro p{   
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 1rem;
+}
+

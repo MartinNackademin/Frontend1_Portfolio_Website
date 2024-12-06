@@ -5,8 +5,12 @@ import { ProjectsList } from "./ProjectsList"
 export const Projects = () => {
     return (
         <main>
-            <section>
-            <h1>My Projects</h1>
+            <section id="projectintro">
+            <h1>Featured Projects</h1>
+            <p>
+            Explore my development journey through these selected Projects
+        
+            </p>
 
 
 

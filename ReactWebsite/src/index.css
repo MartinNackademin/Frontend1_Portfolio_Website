@@ -4,7 +4,7 @@
     --primary-color: #fafafa;
     --secondary-color: #41A5EE;
     --accent-color1: #1c1c1c;
-    --accent-color2: #e8e8e8;
+    --accent-color2: #af5d98;
     --cta-color: #0056b3;
     /* --box-shadow:2px 2px 2px lightgray; */
     --text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
@@ -66,6 +66,12 @@ section{
 h1{
     font-size: 3rem;
     font-weight:900;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses parent element's color */
+    cursor: pointer; /* Shows clickable cursor */
 }
 /* .siteheader {
 
