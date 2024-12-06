@@ -1,13 +1,27 @@
+import React from 'react';
 import { HeaderMenuItem } from "./HeaderMenuItem"
+import contactIcon from './menu-bar.png';
 
 function Header() {
+  
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  function ToggleNavbar() {
+          setIsVisible(!isVisible);
+          }
+
+         
+  
   return (
       <>
- <header className="siteheader">
-        <div className="logo">
-            <i className='bx bxs-cat logoicon'></i>
-            Martin Mohns<span className="logopart2"> Website</span>                
-        </div>
+                 { !isVisible &&  <img src={contactIcon} 
+                alt="A clickable Icon that brings up navbar"
+                onClick={ToggleNavbar}
+                id='NavbarIcon'
+                 />}
+
+  { isVisible && <header className="siteheader">
+  
         <nav>
             <ul className="navmenu">
                 <HeaderMenuItem headerName="Home" />
@@ -17,11 +31,8 @@ function Header() {
                 
             </ul>
         </nav>
-        <ul className="navicons">
-           <li><a className="navanchor" href="#"><i className='bx bx-search-alt navicon'></i></a></li> 
-           <li><a className="navanchor" href="#"><i className='bx bx-menu navicon' ></i></a></li> 
-        </ul>
-    </header>      
+    </header> }
+      
       </>
     )
   }
