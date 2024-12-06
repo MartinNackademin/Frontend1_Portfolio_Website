@@ -1,0 +1,15 @@
+.projectsListItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    border-style: solid;
+}
+
+
+.projectsListItem img{
+    width: 25%;
+
+}
