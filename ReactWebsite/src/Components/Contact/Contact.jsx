@@ -58,7 +58,7 @@ function Contact() {
                 id='contactIcon'
                  />}
            { isVisible && (
-           <section >
+           <section id="contactsection" >
                 <div id='ContactForm'>
 
                 
@@ -68,7 +68,7 @@ function Contact() {
                 id='contactClose'
                  />
             <form onSubmit={formik.handleSubmit}>
-                <label htmlFor="name">Your Name</label>
+                <label className='contactlabel' htmlFor="name">Your Name</label>
                 <input
                  type="text" 
                  id="name" 
@@ -81,7 +81,7 @@ function Contact() {
                  {formik.errors.name ? <div className='error'>{formik.errors.name}</div> : null}
                 
 
-                <label htmlFor="email">Your Email</label>
+                <label className='contactlabel' htmlFor="email">Your Email</label>
                 <input
                  type="email" 
                  id="email" 
@@ -94,7 +94,7 @@ function Contact() {
                     {formik.errors.email ? <div className='error'>{formik.errors.email}</div> : null}
 
 
-                <label htmlFor="message">Your Message</label>
+                <label className='contactlabel' htmlFor="message">Your Message</label>
                 <textarea 
                 type="text" 
                 id="message" 

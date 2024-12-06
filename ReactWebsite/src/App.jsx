@@ -20,8 +20,9 @@ function App()
       <Header/>
       <Main/>
     </PageContext.Provider>
-    <Footer/>
     <Contact/>
+    <Footer/>
+
 
     </>
     )
