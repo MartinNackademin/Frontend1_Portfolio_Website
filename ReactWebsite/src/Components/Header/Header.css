@@ -23,8 +23,7 @@
     height: 100%;
     border: #000 1px solid;
     border-radius: 10px;
-    background-color: #f0f0f0;
-    box-shadow: 0 0 10px #ffffff;
+    background-color: var(--primary-color);
     left: 0;
     right: 0;
     bottom: 0;
@@ -66,10 +65,43 @@
       }
   }
 
-nav{
+  nav {
+    padding: 2%;
+    flex: 1;
+    position: relative;
+
+
+  }
+
+  .navmenu{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
-    flex: 1;
-}
+    flex-direction: column;
+    flex-basis: 15%;
+    flex: 0.75;
+    list-style-type:none;
+    font-size: 250%;
+    height: 100%;
+    gap: 5%;
+    
+  }
+
+.navmenu a:active{
+    color: var(--primary-color);
+    
+  }
+
+.navmenu a:hover{
+        color: var(--cta-color);
+    }
+
+.navmenu a{
+        color: var(--header-text-color);
+        text-decoration: none;
+        color:inherit;
+        align-items: center;
+        font-weight: 700;
+        border: 1px solid 
+    }
+
