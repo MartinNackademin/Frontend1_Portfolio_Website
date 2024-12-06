@@ -38,9 +38,12 @@ main{
 
 section{
     display: flex;
+    width: 80%;
+    height: auto;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    margin: 0.5rem;
 
 }
 /* .siteheader {
