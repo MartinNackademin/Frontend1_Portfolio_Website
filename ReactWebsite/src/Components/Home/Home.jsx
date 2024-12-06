@@ -12,13 +12,13 @@ import './Home.css';
                 <section>
                 
                 <h1 id = "hometitle">
-         <span>Hello, I'm</span>{' '}<span>Martin</span> <span>{'/>'}</span>
+         <span>Hello, I'm</span>{' '}<span>Martin Mohns</span> <span>{'/>'}</span>
          
               </h1>
    
                 </section>
 
-                <section>
+                <section id="homeline">
                 </section>
                 
                 <section id="subheader">

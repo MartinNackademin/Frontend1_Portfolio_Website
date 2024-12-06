@@ -17,21 +17,27 @@
 }
 
 #hometitle span:first-child{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #hometitle span:nth-child(2){
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--secondary-color);
 }
 
 #hometitle span:last-child{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 #subheader p{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#homeline{
+    width: 80%;
+    height: 0.2rem;
+    background-color: var(--secondary-color);
 }
