@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --background-color: white;
-    --header-text-color: white;
-    --header-background-color: #1c1c1c;
     --primary-color: #f0f0f0;
-    --secondary-color: #1c1c1c;
-    --accent-color: #a6a6a6;
+    --secondary-color: #41A5EE;
+    --accent-color1: #1c1c1c;
+    --accent-color2: #a6a6a6;
     --cta-color: #0056b3;
     /* --box-shadow:2px 2px 2px lightgray; */
     --text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
     --border: 1px solid rgba(0,0,0,.3);
+    
 }
 
 
@@ -30,6 +29,7 @@ body {
     flex-direction: column;
 
 }
+
 
 /* .siteheader {
 

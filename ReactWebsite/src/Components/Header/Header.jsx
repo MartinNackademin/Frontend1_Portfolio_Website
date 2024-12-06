@@ -1,6 +1,9 @@
 import React from 'react';
 import { HeaderMenuItem } from "./HeaderMenuItem"
 import contactIcon from './menu-bar.png';
+import closeIcon from './close_icon.png';
+import './Header.css';
+import '../.././index.css';
 
 function Header() {
   
@@ -14,14 +17,18 @@ function Header() {
   
   return (
       <>
-                 { !isVisible &&  <img src={contactIcon} 
+      <div>
+        <div id="headerTopBar"></div>
+                <div id='menuToggle' > { !isVisible &&  <img id='menuImage'  src={contactIcon} 
                 alt="A clickable Icon that brings up navbar"
                 onClick={ToggleNavbar}
-                id='NavbarIcon'
-                 />}
-
-  { isVisible && <header className="siteheader">
-  
+                 />}</div>
+        </div>
+  { isVisible && <header id='HeaderMenu'>
+    <span id='exitbutton'  ><img id='exitbuttonimage'  src={closeIcon} 
+                alt="A clickable Icon that exits the navbar"
+                onClick={ToggleNavbar}></img>
+    </span>
         <nav>
             <ul className="navmenu">
                 <HeaderMenuItem headerName="Home" />
