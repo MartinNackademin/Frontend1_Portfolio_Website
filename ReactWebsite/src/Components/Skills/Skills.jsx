@@ -1,9 +1,19 @@
 
 export const Skills = () => {
+    
+     
     return (
-        <div>
-            <h1>Home</h1>
-            <p>Welcome to my website</p>
-        </div>
+        <main>
+             <section>
+                <h1>My Skillset</h1>
+
+             </section>
+        
+             <section>
+
+                <h1>My references</h1>
+
+             </section>
+        </main>
     )
 }
