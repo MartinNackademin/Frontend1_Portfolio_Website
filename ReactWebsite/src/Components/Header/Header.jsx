@@ -39,7 +39,15 @@ function Header() {
                 <HeaderMenuItem className="headermenuitem"  headerName="Projects" ToggleNavbar={ToggleNavbar}/>
                 <HeaderMenuItem className="headermenuitem"  headerName="Skills" ToggleNavbar={ToggleNavbar}/>  
                 <HeaderMenuItem className="headermenuitem"  headerName="About" ToggleNavbar={ToggleNavbar}/>
-                <HeaderMenuItem className="headermenuitem"  headerName="CV" ToggleNavbar={ToggleNavbar}/>
+                <li><a 
+                className="headermenuitem"  
+                href="https://docs.google.com/document/d/1HhawroGTGV-e7v5KnI873mSGoFZz9z--SQ2EESekM7U/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={ToggleNavbar}
+                >
+                  CV
+                  </a></li>
             </ul>
         </nav>
     </header> }
