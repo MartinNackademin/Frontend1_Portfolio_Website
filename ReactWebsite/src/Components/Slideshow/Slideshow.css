@@ -1,0 +1,53 @@
+.arrow-button {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+/* Right arrow */
+.arrow-right::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    transform: translate(-75%, -50%) rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+/* Left arrow */
+.arrow-left::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: translate(-25%, -50%) rotate(-45deg);
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.arrow-button:hover::after {
+    border-color: #007bff;
+    transform: translate(-75%, -50%) rotate(45deg) scale(1.2); /* for right arrow */
+}
+
+.arrow-left:hover::after {
+    transform: translate(-25%, -50%) rotate(-45deg) scale(1.2); /* for left arrow */
+}
+
+.slideshow img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100;
+}

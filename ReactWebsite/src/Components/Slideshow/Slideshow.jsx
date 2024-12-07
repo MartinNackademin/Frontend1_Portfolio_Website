@@ -32,8 +32,8 @@ function prevSlide() {
     
     return (
         <div className="slideshow">
-            <button onClick={prevSlide} className="slideshow-button">Previous</button>
-            <button onClick={nextSlide} className="slideshow-button">Next</button>
+            <button onClick={prevSlide} className="arrow-button arrow-left"></button>
+            <button onClick={nextSlide} className="arrow-button arrow-right"></button>
             <img src={slideimages[currentSlide]} alt="" />
         </div>
     );

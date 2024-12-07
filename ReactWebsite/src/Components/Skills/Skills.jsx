@@ -1,5 +1,8 @@
 import './Skills.css';
 import React from 'react';
+import Reference1 from '../../assets/images/Reference1.png';
+import Reference2 from '../../assets/images/Reference2.png';
+import Reference3 from '../../assets/images/Reference3.png';
 import Slideshow from '../Slideshow/Slideshow.jsx';
 import { 
     csharpIcon,
@@ -12,12 +15,14 @@ import {
 
 } from '../../assets/IconExport.js';
 
+
+
 export const Skills = () => {
 
     let slideimages = [
-        csharpIcon,
-        css3Icon,
-        githubIcon
+        Reference1,
+        Reference2,
+        Reference3
 
     ];
     
