@@ -14,7 +14,6 @@ function Header() {
           setIsVisible(!isVisible);
           }
 
-         
   
   return (
       <>
@@ -40,8 +39,8 @@ function Header() {
             <img src={mmIcon} id="mmicon" alt="Website Creator Logo" /> 
                 <HeaderMenuItem className="headermenuitem"  headerName="Home" ToggleNavbar={ToggleNavbar} />
                 <HeaderMenuItem className="headermenuitem"  headerName="Projects" ToggleNavbar={ToggleNavbar}/>
-                <HeaderMenuItem className="headermenuitem"  headerName="Socials" ToggleNavbar={ToggleNavbar}/>  
-                <HeaderMenuItem className="headermenuitem"  headerName="Skills" ToggleNavbar={ToggleNavbar}/>
+                <HeaderMenuItem className="headermenuitem"  headerName="Skills" ToggleNavbar={ToggleNavbar}/>  
+                <HeaderMenuItem className="headermenuitem"  headerName="About" ToggleNavbar={ToggleNavbar}/>
                 <HeaderMenuItem className="headermenuitem"  headerName="CV" ToggleNavbar={ToggleNavbar}/>
             </ul>
         </nav>
