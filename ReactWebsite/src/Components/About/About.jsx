@@ -35,11 +35,11 @@ export const About = () => {
                  alt="Linkedin Icon that leads to linkedin" />
         </a>
 
-        <a href="#"
+        <a href="https://github.com/MartinNackademin?tab=repositories"
          target="_blank"
           rel="noopener noreferrer">
             <img src={githubIcon}
-                 alt="Website Creator Logo" />
+                 alt="Github icon that leads to github" />
         </a>
         </div>
         </section>
