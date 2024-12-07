@@ -1,0 +1,56 @@
+.interests-list {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+.interests-list li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.interests-list li:first-child:before {
+    content: "🎮";
+    position: absolute;
+    left: 0;
+}
+
+.interests-list li:last-child:before {
+    content: "🐈";
+    position: absolute;
+    left: 0;
+}
+
+.interests-list li:nth-child(2):before {
+    content: "❤️"; /* 🏠  👨‍👩‍👧*/
+    position: absolute;
+    left: 0;
+}
+
+#bluebackground{
+    width: 100vw;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+#social-img-container{
+    display: flex;
+}
+
+#social-img-container a {
+    display: flex;
+    width: 75%;
+    height: 70%;
+    
+}
+
+#social-img-container img {
+    width: 100%;                   
+    height: 100%;
+    object-fit: contain;
+}
+
+
+

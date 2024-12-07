@@ -14,18 +14,16 @@ function Header() {
           setIsVisible(!isVisible);
           }
 
-  
   return (
       <>
       <div>
-        <div id="headerTopBar"></div>
-                <div id='menuToggle' > { !isVisible &&  <img id='menuImage'  src={contactIcon} 
+        <div id="headerTopBar"/>
+                <div id='menuToggle'> { !isVisible &&  <img id='menuImage'  src={contactIcon} 
                 alt="A clickable Icon that brings up navbar"
                 onClick={ToggleNavbar}
                  />}</div>
         </div>
   { isVisible && <header id='HeaderMenu'>
- 
         <nav>
           <span id='exitbutton'  >
 

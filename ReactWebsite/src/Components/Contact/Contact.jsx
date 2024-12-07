@@ -4,6 +4,11 @@ import './contact.css';
 import contactIcon from './contact_icon.png';
 import close from './close_icon.png';
 
+
+
+
+
+
 function contactvalidate(values){
     const errors = {};
     if (!values.name) {

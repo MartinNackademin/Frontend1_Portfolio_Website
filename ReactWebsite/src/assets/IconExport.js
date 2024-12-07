@@ -5,6 +5,7 @@ import html5Icon from './icons/html5.svg';
 import reactIcon from './icons/react.svg';
 import unityIcon from './icons/unity.svg';
 import vitejsIcon from './icons/vitejs.svg';
+import linkedinIcon from './icons/linkedin.svg';
 
 export {
     csharpIcon,
@@ -13,5 +14,6 @@ export {
     html5Icon,
     reactIcon,
     unityIcon,
-    vitejsIcon
+    vitejsIcon,
+    linkedinIcon
 };
