@@ -1,5 +1,6 @@
 import './Skills.css';
 import React from 'react';
+import Slideshow from '../Slideshow/Slideshow.jsx';
 import { 
     csharpIcon,
     css3Icon,
@@ -12,6 +13,13 @@ import {
 } from '../../assets/IconExport.js';
 
 export const Skills = () => {
+
+    let slideimages = [
+        csharpIcon,
+        css3Icon,
+        githubIcon
+
+    ];
     
      
     return (
@@ -28,10 +36,10 @@ export const Skills = () => {
                     <img src={vitejsIcon} alt="vitejs icon" />
                 </div>
              </section>
-        
+            <Slideshow slideimages={slideimages}/>
              <section>
 
-                <h1>My references</h1>
+                
 
              </section>
         </main>
