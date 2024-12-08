@@ -19,7 +19,6 @@ function App()
     
     <PageContext.Provider value={ {activePage, setActivePage} }>
       <Header/>
-      <Contact/>
       <Main/>
     </PageContext.Provider>
    

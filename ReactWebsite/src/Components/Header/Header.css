@@ -1,10 +1,12 @@
 #menuImage{
-    width: 10%;
-    height: 10%;
+    width: 12.6%;
+    height: auto;
 }
 
 #menuToggle{
     padding: 2%;
+    padding-left: -1%;
+    padding-right: -1%;
     display: flex;
     justify-content: flex-end;
 }

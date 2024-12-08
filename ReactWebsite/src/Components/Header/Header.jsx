@@ -5,6 +5,7 @@ import closeIcon from './close_icon.png';
 import mmIcon from './mm.png';
 import './Header.css';
 import '../.././index.css';
+import { Contact } from '../Contact/Contact';
 
 function Header() {
   
@@ -17,8 +18,11 @@ function Header() {
   return (
       <>
       <div>
+        
         <div id="headerTopBar"/>
-                <div id='menuToggle'> { !isVisible &&  <img id='menuImage'  src={contactIcon} 
+                <div id='menuToggle'>
+                <Contact/>
+                { !isVisible &&  <img id='menuImage'  src={contactIcon} 
                 alt="A clickable Icon that brings up navbar"
                 onClick={ToggleNavbar}
                  />}</div>
