@@ -56,14 +56,16 @@ function Contact() {
 
         return (
             <>
-           
+
+           <div id='contactIcon'>
            { !isVisible &&  <img src={contactIcon} 
                 alt="A clickable Icon that brings up the Contact Form"
                 onClick={ToggleContact}
-                id='contactIcon'
+                
                  />}
+            </div>
            { isVisible && (
-           <section id="contactsection" >
+          
                 <div id='ContactForm'>
 
                 
@@ -116,11 +118,11 @@ function Contact() {
 
 
 
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </form>
 
             </div>
-        </section>)}
+       )}
      
         </>
           

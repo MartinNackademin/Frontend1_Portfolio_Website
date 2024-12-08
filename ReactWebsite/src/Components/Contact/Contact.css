@@ -11,7 +11,6 @@
 
 }
 
-
 .contactlabel{
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -23,23 +22,27 @@
     justify-content: left;
 }
 
-#contactsection{
-  border: #000 1px solid;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
+#ContactForm{
     background-color: #f0f0f0;
-    box-shadow: 0 0 10px #ffffff;
-    left: 0;
-    right: 0;
+    width: 80%;
+    height: 75%;
     bottom: 0;
+    right: 10%;
     position: fixed;
     overflow-y:hidden;
     overflow-x:hidden;
     animation: contactmoveup 0.5s ease-in-out;
-    width: 50%;
     z-index: 2;
+    padding: 1rem;
 }
+
+#ContactForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @keyframes contactmoveup {
     0% {
@@ -78,31 +81,22 @@ button {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
   }
 
+  #contactIcon :first-child{
+    width: 25%;
+    height: 25%;
+    }   
+  
   #contactIcon{
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 5%;
-    
-  }
-
-#contactClose{
-    align-self: flex-end;
-    width: 5%;
-    }
-
-#ContactForm{
-    display: flex;
-    flex-direction: column;
-    }
-
-  form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+
+  }   
+  
+
+#contactClose{
+    align-self: flex-end;
+    width: 5%;
+    
+    }

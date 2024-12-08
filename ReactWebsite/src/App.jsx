@@ -16,11 +16,13 @@ function App()
 
   return (
     <>
+    
     <PageContext.Provider value={ {activePage, setActivePage} }>
       <Header/>
+      <Contact/>
       <Main/>
     </PageContext.Provider>
-    <Contact/>
+   
     <Footer/>
 
 
