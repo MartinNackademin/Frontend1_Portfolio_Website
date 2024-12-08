@@ -44,6 +44,7 @@ function Contact() {
       validate: contactvalidate,
       onSubmit: values => {
         alert(JSON.stringify(values, null, 2));
+        ToggleContact();
       },
     });
             
@@ -74,7 +75,7 @@ function Contact() {
                 onClick={ToggleContact}
                 id='contactClose'
                  />
-            <form onSubmit={formik.handleSubmit}>
+            <form onSubmit={formik.handleSubmit}noValidate >
                 <label className='contactlabel' htmlFor="name">Your Name</label>
                 <input
                  type="text" 
@@ -107,7 +108,9 @@ function Contact() {
                 <textarea 
                 type="text" 
                 id="message" 
-                name="message" 
+                name="message"
+                rows="10"
+                cols="30" 
                 placeholder="Your Message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
