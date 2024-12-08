@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { HeaderMenuItem } from "./HeaderMenuItem"
 import contactIcon from './menu-bar.png';
 import closeIcon from './close_icon.png';
@@ -10,6 +11,27 @@ import { Contact } from '../Contact/Contact';
 function Header() {
   
   const [isVisible, setIsVisible] = React.useState(false);
+
+
+
+
+// This is a custom hook that listens for window resize events
+// this was AI generated as i do not know how listeners work.
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   function ToggleNavbar() {
           setIsVisible(!isVisible);
@@ -27,7 +49,7 @@ function Header() {
                 onClick={ToggleNavbar}
                  />}</div>
         </div>
-  { isVisible && <header id='HeaderMenu'>
+  { (isVisible  || window.innerWidth >= 1024) && <header id='HeaderMenu'>
         <nav>
           <span id='exitbutton'  >
 
@@ -55,6 +77,8 @@ function Header() {
             </ul>
         </nav>
     </header> }
+
+    
       
       </>
     )

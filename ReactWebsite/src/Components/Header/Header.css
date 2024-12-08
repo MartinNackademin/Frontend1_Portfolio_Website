@@ -119,9 +119,47 @@
 
 @media screen and (min-width: 1024px) {
 
+  #headerTopBar{
+    display: none;
+  }
+
   #menuToggle{
+    display: none;
+  }
+  .navmenu{
+    flex-direction: row;
+    align-items: center;
+    list-style-type:none;
+    font-size: 250%;
+    height: 100%;
+  }
+  nav {
+    padding: 0;
+    flex: 1;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  #HeaderMenu{
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    flex-direction: row;
+    left:unset;
+    right:unset;
+    bottom:unset;
+    position: relative;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height:10vh;
+
+  }
+
+  #exitbutton{
     display: none;
   }
 
     
-    }
+}
