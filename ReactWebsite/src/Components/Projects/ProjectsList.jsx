@@ -30,29 +30,17 @@ let projects = [
 export const ProjectsList = () => {
     return (
     <>
-        <ul>
-        <ProjectsListItem 
-            
-            name={projects[0].name}
-            image={projects[0].image}
-            desc={projects[0].desc}
-            url={projects[0].url}
-        />
-
-         <ProjectsListItem
-            
-            name={projects[1].name}
-            image={projects[1].image}
-            desc={projects[1].desc}
-            url={projects[1].url}
-         />
-
-         <ProjectsListItem
-            name={projects[2].name}
-            image={projects[2].image}
-            desc={projects[2].desc}
-            url={projects[2].url}
-         />
+            <ul>
+                {projects.map((project, index) => (
+                    <ProjectsListItem
+                        key={index}
+                        name={project.name}
+                        image={project.image}
+                        desc={project.desc}
+                        url={project.url}
+                    />
+                ))}
+         
         </ul>
     </>
     );

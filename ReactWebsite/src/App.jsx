@@ -1,32 +1,50 @@
-import './App.css'
 import Header from './Components/Header/Header'
-import Footer from './Components/Footer/Footer'
-import Main from './Components/Main/Main'
-import React, { useState } from "react";
-import {PageContext} from './Components/data/PageContext'
-import { Contact } from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer.jsx'
+import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom';
+import { Home } from './Components/Home/Home';
+import { Projects } from './Components/Projects/Projects';
+import { Skills } from './Components/Skills/Skills';
+import { About } from './Components/About/About';
 
+function Layout() {
+    return (
+        <>
+            <Header/>
+            <Outlet/>
+            <Footer/>
+        </>
+    );
+}
 
+const router = createBrowserRouter([
+  {
+    element: <Layout/>,
+    errorElement: <div>DET FUNKAR JU INTE XD </div>,
+    children:[
+      {
+        path: '/',
+        element: <Home/>
+      },
+      {
+        path: '/Projects',
+        element: <Projects/>
+      },
+      {
+        path: '/Skills',
+        element: <Skills/>
+      },
+      {
+        path: '/About',
+        element: <About/>
+      },      
+    ]
+  }
+]);
 
-function App() 
-{
-  const [activePage, setActivePage] = useState("Home");
-  const {showContact, setShowContact} = useState(false);
-  
-
+function App() {
   return (
-    <>
-    
-    <PageContext.Provider value={ {activePage, setActivePage} }>
-      <Header/>
-      <Main/>
-    </PageContext.Provider>
-   
-    <Footer/>
-
-
-    </>
-    )
+    <RouterProvider router={router}></RouterProvider>
+  )
 }
 
 export default App

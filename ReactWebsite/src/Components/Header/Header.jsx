@@ -17,6 +17,7 @@ function Header() {
 
 // This is a custom hook that listens for window resize events
 // this was AI generated as i do not know how listeners work.
+// this was a quick fix cause i will not be able to make my assignment in time otherwise.
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   
@@ -61,10 +62,10 @@ function Header() {
           
             <ul className="navmenu">
             <img src={mmIcon} id="mmicon" alt="Website Creator Logo" /> 
-                <HeaderMenuItem className="headermenuitem"  headerName="Home" ToggleNavbar={ToggleNavbar} />
-                <HeaderMenuItem className="headermenuitem"  headerName="Projects" ToggleNavbar={ToggleNavbar}/>
-                <HeaderMenuItem className="headermenuitem"  headerName="Skills" ToggleNavbar={ToggleNavbar}/>  
-                <HeaderMenuItem className="headermenuitem"  headerName="About" ToggleNavbar={ToggleNavbar}/>
+                <HeaderMenuItem className="headermenuitem"  headerName="Home" ToggleNavbar={ToggleNavbar} navLink="/" />
+                <HeaderMenuItem className="headermenuitem"  headerName="Projects" ToggleNavbar={ToggleNavbar}navLink="/Projects"/>
+                <HeaderMenuItem className="headermenuitem"  headerName="Skills" ToggleNavbar={ToggleNavbar}navLink="/Skills"/>  
+                <HeaderMenuItem className="headermenuitem"  headerName="About" ToggleNavbar={ToggleNavbar}navLink="/About"/>
                 <li><a 
                 className="headermenuitem"  
                 href="https://docs.google.com/document/d/1HhawroGTGV-e7v5KnI873mSGoFZz9z--SQ2EESekM7U/edit?usp=sharing"

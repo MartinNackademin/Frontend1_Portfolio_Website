@@ -1,25 +1,20 @@
 import React, { useState } from 'react'
-import { PageContext } from '../data/PageContext'
-import { useContext } from 'react';
+import { Link, useLocation } from 'react-router-dom'
 
-export const HeaderMenuItem = ({headerName, ToggleNavbar}) => {
-    const {activePage,setActivePage} = useContext(PageContext);
-
-const IWasClicked = () =>
-    {
-        setActivePage(headerName);
-        ToggleNavbar();
-    }
+export const HeaderMenuItem = ({headerName, ToggleNavbar,navLink}) => {
+    
+    const location = useLocation();
+    console.log(location.pathname);
 
 
     return(
-        <li>
-            <a
-            onClick={ IWasClicked }
-            className={`headeranchor ${activePage === headerName ? 'active' : ''}`}
-             href="#">
-             {headerName} 
-             </a>
+        <li onClick={ToggleNavbar}>
+            <Link
+            to={navLink}
+            className={`headeranchor ${location.pathname === navLink ? "active" : ""}`}
+             >
+             {headerName}
+             </Link>
         </li>
     )  
 
