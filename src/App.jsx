@@ -1,6 +1,6 @@
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer.jsx'
-import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom';
+import { createHashRouter, RouterProvider, Outlet} from 'react-router-dom';
 import { Home } from './Components/Home/Home';
 import { Projects } from './Components/Projects/Projects';
 import { Skills } from './Components/Skills/Skills';
@@ -17,39 +17,37 @@ function Layout() {
     );
 }
 
-const router = createBrowserRouter([
-  {
-    element: <Layout/>,
-    errorElement: <div>DET FUNKAR JU INTE XD </div>,
-    children:[
-      {
-        path: '/',
-        element: <Home/>
-      },
-      {
-        path: '/Projects',
-        element: <Projects/>
-      },
-      {
-        path: '/Skills',
-        element: <Skills/>
-      },
-      {
-        path: '/About',
-        element: <About/>
-      },   
-      {
-        path: '/Projects/:urlname',
-        element: <SingleProject/>
-      },    
-    ]
-  }
+const router = createHashRouter([
+    {
+        element: <Layout/>,
+        errorElement: <div>404 - Page Not Found</div>,
+        children: [
+            {
+                path: "/",
+                element: <Home/>
+            },
+            {
+                path: "/projects",
+                element: <Projects/>
+            },
+            {
+                path: "/skills",
+                element: <Skills/>
+            },
+            {
+                path: "/about",
+                element: <About/>
+            },
+            {
+                path: "/projects/:id",
+                element: <SingleProject/>
+            }
+        ]
+    }
 ]);
 
 function App() {
-  return (
-    <RouterProvider router={router}></RouterProvider>
-  )
+    return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
