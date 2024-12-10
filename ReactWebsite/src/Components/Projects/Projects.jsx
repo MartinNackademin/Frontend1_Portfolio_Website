@@ -9,7 +9,6 @@ export const Projects = () => {
             <h1>Featured Projects</h1>
             <p>
             Explore my development journey through these selected Projects
-        
             </p>
 
 

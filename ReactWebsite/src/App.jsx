@@ -5,6 +5,7 @@ import { Home } from './Components/Home/Home';
 import { Projects } from './Components/Projects/Projects';
 import { Skills } from './Components/Skills/Skills';
 import { About } from './Components/About/About';
+import { SingleProject } from './Components/Projects/SingleProject.jsx';
 
 function Layout() {
     return (
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
       {
         path: '/About',
         element: <About/>
-      },      
+      },   
+      {
+        path: '/Projects/:urlname',
+        element: <SingleProject/>
+      },    
     ]
   }
 ]);
